@@ -48,12 +48,44 @@
             </div>
         </div>
     </div>
-    <ul id="Media">
-  <li><img src="img/portfolio/media1.jpg" width="50" height="50" alt="" /></li>
-  <li><img src="img/portfolio/media2.jpg" width="50" height="50" alt="" /></li>
-  <li><img src="img/portfolio/media3.jpg" width="50" height="50" alt="" /></li>
-  <li><img src="img/portfolio/media4.jpg" width="50" height="50" alt="" /></li>
-  <li><img src="img/portfolio/media5.jpg" width="50" height="50" alt="" /></li>
-</ul>
+    
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+    
+    <img src="img/portfolio/media2.jpg" width="50" height="50" alt="" />
+    
+            <div class="row">
+  <div class="column">
+    <img src="img/portfolio/media2.jpg" alt="1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/portfolio/media3.jpg" alt="2" style="width:100%">
+  </div>
+</div>
+    
+            <div class="row">
+  <div class="column">
+    <img src="img/portfolio/media4.jpg" alt="1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/portfolio/media5.jpg" alt="2" style="width:100%">
+  </div>
+</div>
     
 </section>
